@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    gap: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.text-center {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+/* Font Sizes */
+.xsm {
+    font-size: .5rem;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xlg {
+    font-size: 6.2rem;
+}
+
+/* Font Weights */
+
+.light {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* paddings */
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+/* margins */
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+.m-3 {
+    margin: 3rem;
+}
+
+
+/* Buttons */
+
+.btn {
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #333;
+    animation: btnGradient 15s ease infinite;
+}
+
+.btn-primaery {
+    background-color: white;
+}
+
+/* display */
+.d-none {
+    display: none;
+}
+
+@keyframes btnGradient {
+    0% {
+		background-position: 0% 50%;
+        color: #333;
+        border-color: #333;
+	}
+	50% {
+		background-position: 100% 50%;
+        color: white;
+        border-color: white;
+	}
+	100% {
+		background-position: 0% 50%;
+        color: #333;
+        border-color: #333;
+	}
+}

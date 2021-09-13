@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Aloe | Calm Your Mind</title>
+</head>
+
+<body>
+    <section class="home">
+        <div class="container grid">
+            <header class="header text-center">
+                <h1 class="xlg">This Is Aloe</h1>
+                <h2 class="md light">The Best Meditaition to ease your mind</h2>
+            </header>
+            <div class="start-btn text-center">
+                <h3 class="md bold">Start Now</h3>
+                <button class="play-btn btn btn-outline" type="button">
+                    <i class="fas fa-play md"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="app d-none">
+
+        <div class="videos">
+            <div class="video waveVid">
+                <video src="./video/beach.mp4" muted loop autoplay></video>
+            </div>
+            <div class="video rainVid">
+                <video src="./video/rain.mp4" muted loop autoplay></video>
+            </div>
+            <div class="choose-btn">
+                <h1 class="app-header text-center p-1 m-3">Choose Your Meditation Mode</h1>
+                <button class="rain-btn btn btn-primary">Rain</button>
+                <button class="wave-btn btn btn-primary">Wave</button>
+            </div>
+            <div class="video-content">
+                <div class="back-btn">
+                    <i class="fas fa-arrow-circle-left lg"></i>
+                </div>
+            </div>
+        </div>
+        <audio src="sounds/rain.mp3" class="rain" controlsList="nodownload" loop hidden>
+        </audio>
+        <audio src="sounds/beach.mp3" class="wave" controlsList="nodownload" loop hidden>
+        </audio>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
